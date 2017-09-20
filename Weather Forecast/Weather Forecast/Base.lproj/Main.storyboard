@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Weather_Forecast" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brady-bellini-191086.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="R63-Vj-ILi">
+                                <rect key="frame" x="0.0" y="28" width="375" height="639"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Enter your city" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4oz-xu-dgq">
+                                <rect key="frame" x="77.5" y="52" width="220.5" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Eg: London, Los Angeles" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iXL-Zy-hTI">
+                                <rect key="frame" x="16" y="100" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Mw-t3-V3q">
+                                <rect key="frame" x="154" y="150" width="67" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" red="0.11290987279121156" green="0.36235512798630853" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleShadowColor" red="0.1122145335" green="0.3954571228" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="submit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ng9-Y4-PKR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lnl" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qzh-Mq-U7L">
+                                <rect key="frame" x="99" y="196" width="177" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iXL-Zy-hTI" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="1pd-M2-wcx"/>
+                            <constraint firstItem="qzh-Mq-U7L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Ie-hK-fhi"/>
+                            <constraint firstItem="iXL-Zy-hTI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BPD-4u-Q3n"/>
+                            <constraint firstItem="qzh-Mq-U7L" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="83" id="Ify-9B-T3Q"/>
+                            <constraint firstItem="qzh-Mq-U7L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PmP-LD-zs3"/>
+                            <constraint firstItem="4oz-xu-dgq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TYO-FM-Vck"/>
+                            <constraint firstItem="R63-Vj-ILi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XcZ-q8-HKH"/>
+                            <constraint firstItem="7Mw-t3-V3q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XxF-y8-gkm"/>
+                            <constraint firstItem="iXL-Zy-hTI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dUT-c3-Iwx"/>
+                            <constraint firstItem="qzh-Mq-U7L" firstAttribute="top" secondItem="7Mw-t3-V3q" secondAttribute="bottom" constant="8" id="dnJ-Zq-Vm1"/>
+                            <constraint firstItem="7Mw-t3-V3q" firstAttribute="top" secondItem="iXL-Zy-hTI" secondAttribute="bottom" constant="20" id="gPI-Do-R0Z"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="R63-Vj-ILi" secondAttribute="bottom" id="ns9-J4-8z1"/>
+                            <constraint firstItem="4oz-xu-dgq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="32" id="ohH-Ti-JGQ"/>
+                            <constraint firstItem="iXL-Zy-hTI" firstAttribute="top" secondItem="4oz-xu-dgq" secondAttribute="bottom" constant="20.5" id="owv-mo-J2L"/>
+                            <constraint firstItem="R63-Vj-ILi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="rYU-7o-tOh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qzh-Mq-U7L" secondAttribute="trailing" constant="83" id="xBu-Zw-QnO"/>
+                            <constraint firstAttribute="trailing" secondItem="R63-Vj-ILi" secondAttribute="trailing" id="xZi-br-aW1"/>
+                            <constraint firstItem="qzh-Mq-U7L" firstAttribute="top" secondItem="7Mw-t3-V3q" secondAttribute="bottom" constant="8" id="y3C-nD-Zmm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="input" destination="iXL-Zy-hTI" id="ghE-ra-2bj"/>
+                        <outlet property="output" destination="qzh-Mq-U7L" id="ADi-Lh-3fI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="brady-bellini-191086.jpg" width="6000" height="3608"/>
+    </resources>
+</document>
